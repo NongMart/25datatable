@@ -19,6 +19,18 @@
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
             crossorigin="anonymous"></script>
         <link href="css/style.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script
+            src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script
+            src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link
+            href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"
+            rel="stylesheet">
     </head>
 
     <body>
@@ -26,26 +38,103 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="d-grid">
-                        <button type="button" class="btn btn-primary btn-block"><h2>Kanoot</h2></button>
+                        <button type="button" class="btn btn-primary btn-block"><h5>Kanoot</h5></button>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="d-grid">
-                        <button type="button" class="btn btn-danger btn-block"><h2>Boonsri</h2></button>
+                        <button type="button" class="btn btn-danger btn-block"><h5>Boonsri</h5></button>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="d-grid">
-                        <button type="button" class="btn btn-info btn-block"><h2>25</h2></button>
+                        <button type="button" class="btn btn-info btn-block"><h5>25</h5></button>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="d-grid">
-                        <button type="button" class="btn btn-warning btn-block"><h2>Smart</h2></button>
+                        <button type="button" class="btn btn-warning btn-block"><h5>Smart</h5></button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <table id="example" class="table table-striped"
+                        style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Siwagon Wongchan</td>
+                                <td>CEO</td>
+                                <td>Chiangmai</td>
+                                <td>20</td>
+                                <td>2002-06-13</td>
+                                <td>$5,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>Nattakit Kaewkhamyos</td>
+                                <td>Professor</td>
+                                <td>Chiangmai</td>
+                                <td>19</td>
+                                <td>2002-11-18</td>
+                                <td>$1,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>Kittiphon Panchong</td>
+                                <td>Chef</td>
+                                <td>Chiangmai</td>
+                                <td>20</td>
+                                <td>2002-02-22</td>
+                                <td>$750,000</td>
+                            </tr>
+                            <tr>
+                                <td>Wacharin Koonyotying</td>
+                                <td>Janitor</td>
+                                <td>Chiangmai</td>
+                                <td>20</td>
+                                <td>2002-11-08</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>Chaloemwud Ngampramuan</td>
+                                <td>Roblox Master</td>
+                                <td>Chiangmai</td>
+                                <td>19</td>
+                                <td>2003-08-19</td>
+                                <td>$1,000,000,000</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Salary</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="card-footer">Footer</div>
+            </div>
+        </div>
     </body>
-
+    <script>
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
+    </script>
 </html>
